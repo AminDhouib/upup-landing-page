@@ -10,28 +10,28 @@
   },
   "dependencies": {
     "@bassem97/upup": "^2.4.0",
-    "framer-motion": "^11.0.24",
+    "framer-motion": "^11.1.9",
     "ityped": "^1.0.3",
     "next": "14.1.4",
     "pako": "^2.1.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-lottie": "^1.2.4",
     "react-use-scroll-direction": "^0.1.0",
-    "sass": "^1.74.1",
-    "styled-components": "^6.1.8"
+    "sass": "^1.77.0",
+    "styled-components": "^6.1.10"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.12.10",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "@types/react-lottie": "^1.2.10",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   }
 }
