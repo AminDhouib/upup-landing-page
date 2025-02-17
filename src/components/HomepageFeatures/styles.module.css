@@ -1,0 +1,83 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.featuresGrid {
+  display: grid;
+  gap: 2rem;
+
+  @media (min-width: 996px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featureCard {
+  background: var(--ifm-color-off-background);
+  border: 3px solid var(--ifm-color-off-border);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.featureIcon {
+  width: 120px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+
+  svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 8px var(--ifm-color-drop-shadow));
+}
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, var(--ifm-color-primary), var(--ifm-color-primary-lightest));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.featureDescription {
+  line-height: 1.6;
+}
+
+/* Animation classes */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 0.5s;
+}
+.delay3 {
+  animation-delay: 1s;
+}

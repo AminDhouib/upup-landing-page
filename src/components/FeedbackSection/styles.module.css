@@ -1,0 +1,23 @@
+.feedbackSection {
+  background: var(--ifm-color-off-background);
+  border-top: 1px solid var(--ifm-color-off-border);
+  padding: 3rem 0;
+  text-align: center;
+
+  h3 {
+    color: var(--ifm-color-primary);
+    margin-bottom: 1rem;
+  }
+}
+
+.feedbackLink {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    color: var(--ifm-color-primary-dark);
+    text-decoration: none;
+    opacity: 0.9;
+  }
+}

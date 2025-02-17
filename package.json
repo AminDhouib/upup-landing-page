@@ -1,37 +1,59 @@
 {
-  "name": "upup",
-  "version": "0.1.0",
+  "name": "upup-docs",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@bassem97/upup": "^2.4.0",
-    "framer-motion": "^11.0.24",
-    "ityped": "^1.0.3",
-    "next": "14.1.4",
-    "pako": "^2.1.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.0.1",
-    "react-lottie": "^1.2.4",
-    "react-use-scroll-direction": "^0.1.0",
-    "sass": "^1.74.1",
-    "styled-components": "^6.1.8"
+    "@docusaurus/core": "3.7.0",
+    "@docusaurus/preset-classic": "3.7.0",
+    "@docusaurus/theme-common": "^3.7.0",
+    "@docusaurus/theme-mermaid": "^3.7.0",
+    "@mdx-js/react": "^3.0.0",
+    "clsx": "^2.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-toastify": "^11.0.3",
+    "upup-react-file-uploader": "^1.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-lottie": "^1.2.10",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "@docusaurus/module-type-aliases": "3.7.0",
+    "@docusaurus/tsconfig": "3.7.0",
+    "@docusaurus/types": "3.7.0",
+    "@eslint/compat": "^1.2.5",
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.22.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }
