@@ -127,6 +127,7 @@ The UpupUploader component uses container queries for responsive layout adjustme
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (

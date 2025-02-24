@@ -70,6 +70,7 @@ The example below shows a minimal configuration for AWS S3 upload, using the [Up
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (

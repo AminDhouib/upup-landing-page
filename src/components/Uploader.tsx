@@ -2,6 +2,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useColorMode } from "@docusaurus/theme-common";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React, { useMemo } from "react";
+import "upup-react-file-uploader/styles";
 
 type Props = {
   limit: number;

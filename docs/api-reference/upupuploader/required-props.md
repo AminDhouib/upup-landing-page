@@ -38,6 +38,7 @@ Here is an example of using the Azure Provider:
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (
