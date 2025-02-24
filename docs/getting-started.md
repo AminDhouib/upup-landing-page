@@ -175,3 +175,9 @@ The full list of exported server utility functions include:
 For a full list of values sent by the React component to the server, check out these [docs](/docs/api-reference/upupuploader/required-props.md#tokenendpoint).
 
 :::
+
+## Advanced Usage
+
+### Programmatic Control
+
+For more advanced use cases, you can control the upload process programmatically using the component's [ref API](/docs/api-reference/upupuploader/ref-api.md)
