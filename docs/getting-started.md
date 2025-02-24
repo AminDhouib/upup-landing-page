@@ -116,7 +116,7 @@ For the upload to work without errors, it is important to:
 
 1. Manually configure CORS using our [credentials guide](/docs/credentials-configuration.md#server-side-configurations), OR
 2. Enabling `enableAutoCorsConfig` with properly restricted credentials
-   :::
+:::
 
 ```ts
 import { s3GeneratePresignedUrl } from "upup-react-file-uploader/server";
