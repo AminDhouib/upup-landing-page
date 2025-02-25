@@ -4,7 +4,11 @@ sidebar_position: 3
 
 # Event Handlers
 
-These callback props allow you to hook into key moments of the file(s) selection and upload lifecycle. All handlers are optional, but granular control over the upload operation
+These callback props allow you to hook into key moments of the file(s) selection and upload lifecycle. All handlers are optional, but provide granular control over the upload operation.
+
+:::tip
+For programmatic control of the upload process, you can also use the [Ref API](/docs/api-reference/upupuploader/ref-api.md) which provides a `useUpload` method to access upload state and trigger uploads from parent components.
+:::
 
 | Prop | Example | Type | Status | Default Value |
 | ---  | ------- | ---- | ------ | ------------- |

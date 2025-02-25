@@ -11,6 +11,7 @@ sidebar_position: 3
 ```tsx
 "use client";
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (
@@ -89,6 +90,7 @@ import {
   UpupProvider,
   UploadAdapter,
 } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (

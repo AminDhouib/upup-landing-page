@@ -87,6 +87,7 @@ When using TypeScript, you must use the `UploadAdapter` enum value exported from
 
 ```javascript
 import { UpupUploader, UploadAdapter } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 // Correct usage with enum
 <UpupUploader
@@ -110,6 +111,7 @@ An object for custom values that you want to pass to the [`tokenEndpoint`](/docs
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (
@@ -150,6 +152,7 @@ For example:
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (

@@ -70,6 +70,7 @@ The example below shows a minimal configuration for AWS S3 upload, using the [Up
 
 ```tsx
 import { UpupUploader, UpupProvider } from "upup-react-file-uploader";
+import 'upup-react-file-uploader/styles'
 
 export default function Uploader() {
   return (
@@ -115,7 +116,7 @@ For the upload to work without errors, it is important to:
 
 1. Manually configure CORS using our [credentials guide](/docs/credentials-configuration.md#server-side-configurations), OR
 2. Enabling `enableAutoCorsConfig` with properly restricted credentials
-   :::
+:::
 
 ```ts
 import { s3GeneratePresignedUrl } from "upup-react-file-uploader/server";
@@ -175,3 +176,9 @@ The full list of exported server utility functions include:
 For a full list of values sent by the React component to the server, check out these [docs](/docs/api-reference/upupuploader/required-props.md#tokenendpoint).
 
 :::
+
+## Advanced Usage
+
+### Programmatic Control
+
+For more advanced use cases, you can control the upload process programmatically using the component's [ref API](/docs/api-reference/upupuploader/ref-api.md)
