@@ -232,12 +232,3 @@ h4 {
     text-decoration: none;
   }
 }
-
-.github-link {
-  position: relative;
-  left: 0.875rem;
-
-  @media (min-width: 996px) {
-    left: 0;
-  }
-}
