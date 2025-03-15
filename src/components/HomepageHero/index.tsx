@@ -28,7 +28,7 @@ export default function HeroSection() {
     <header className={clsx("hero", "wrapper", styles.heroWrapper)}>
       <div className={clsx("container", styles.heroContainer)}>
         <div className={styles.heroVersionContainer}>
-          <span className={styles.heroVersionContent}>v1.0 Now Available</span>
+          <span className={styles.heroVersionContent}>Optimized For React</span>
         </div>
 
         <Heading as="h1" className={clsx("hero__title", styles.heroTitle)}>
