@@ -26,7 +26,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-toastify": "^11.0.3",
-    "upup-react-file-uploader": "^1.0.2"
+    "upup-react-file-uploader": "^1.1.1"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",

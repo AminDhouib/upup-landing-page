@@ -45,8 +45,8 @@ importers:
         specifier: ^11.0.3
         version: 11.0.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       upup-react-file-uploader:
-        specifier: ^1.0.2
-        version: 1.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.1.1
+        version: 1.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@docusaurus/module-type-aliases':
         specifier: 3.7.0
@@ -6505,8 +6505,8 @@ packages:
     resolution: {integrity: sha512-EDxhTEVPZZRLWYcJ4ZXjGFN0oP7qYvbXWzEgRm/Yql4dHX5wDbvh89YHP6PK1lzZJYrMtXUuZZz8XGK+U6U1og==}
     engines: {node: '>=14.16'}
 
-  upup-react-file-uploader@1.1.0:
-    resolution: {integrity: sha512-y2XM98kdeHqbJVveWvEopWLswrAKJ3C4PS8ifMnOYvH+QRttVnLMO9cLUiiTvKr3aCnFkZUBe8mEXClXAP3F5Q==}
+  upup-react-file-uploader@1.1.1:
+    resolution: {integrity: sha512-BOjbqYuG3imy/yAYanzFHtDPqHU/7/NNoDqow4fY7k5hz8+lJ8OvLdkM84+NoxFtCqO3f+Y5Yq1OaeIAYIiQUw==}
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
@@ -15589,7 +15589,7 @@ snapshots:
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
-  upup-react-file-uploader@1.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  upup-react-file-uploader@1.1.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@aws-sdk/client-s3': 3.750.0
       '@aws-sdk/s3-request-presigner': 3.750.0
