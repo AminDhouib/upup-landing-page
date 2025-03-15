@@ -18,24 +18,29 @@
   }
 }
 
+.heroWrapper {
+  padding: 4rem 0;
+}
+
 .heroContainer {
   max-width: 56rem /* 896px */;
   text-align: center;
-  margin: calc(2rem * calc(1 - var(--tw-space-y-reverse))) auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .heroVersionContainer {
   display: inline-block;
-  margin-bottom: 2rem /* 32px */;
+  margin-bottom: 1rem;
   animation: fadeIn 0.5s ease-out forwards;
 }
 
 .heroVersionContent {
-  padding: 0.25rem 0.75rem /* 4px 12px */;
-  font-size: 0.875rem /* 14px */;
-  line-height: 1.25rem /* 20px */;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   border-radius: 9999px;
   border: 1px solid var(--ifm-color-primary);
   background-color: var(--ifm-color-badge);
@@ -52,14 +57,22 @@
 .heroTitleSpan {
   display: block;
   color: var(--ifm-color-primary);
+  margin-top: 0rem;
+
+  margin-bottom: 1rem;
 }
 
 .heroSubTitle {
   font-size: 1.25rem /* 20px */;
   line-height: 1.75rem /* 28px */;
   opacity: 0;
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+
   animation: fadeInUp 0.5s ease-out forwards;
   animation-delay: 200ms;
+  margin-bottom: 1rem; /* Just a little space under the subtitle */
 
   strong {
     color: var(--ifm-color-primary);
@@ -71,7 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.5rem 1rem /* 8px 16px */;
+  gap: 0.75rem; /* More space between the two buttons */
   opacity: 0;
   animation: fadeInUp 0.5s ease-out forwards;
   animation-delay: 300ms;
@@ -152,7 +165,6 @@
   display: inline-block;
   background-color: var(--docusaurus-highlighted-code-line-bg);
   border-radius: 0.5rem /* 8px */;
-  width: 20rem;
 
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;
