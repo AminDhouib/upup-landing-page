@@ -11,7 +11,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://upup-landing-page.vercel.app",
+  url: "https://useupup.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -42,9 +42,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/AminDhouib/upup-landing-page",
+          editUrl: "https://github.com/DevinoSolutions/upup",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -52,7 +50,54 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  headTags: [
+    ...(process.env.NODE_ENV === "production"
+      ? [
+          {
+            tagName: "script",
+            attributes: {
+              defer: true,
+            },
+            innerHTML: `
+              (function(h,o,t,j,a,r){
+                  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                  h._hjSettings={hjid:6368230,hjsv:6};
+                  a=o.getElementsByTagName('head')[0];
+                  r=o.createElement('script');r.async=1;
+                  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                  a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `,
+          },
+        ]
+      : []),
+  ],
+  plugins: [
+    // Flatten the conditional array using spread operator
+    ...(process.env.NODE_ENV === "production"
+      ? [
+          [
+            "@docusaurus/plugin-google-gtag",
+            {
+              trackingID: "G-F52BVDX05M",
+              anonymizeIP: true,
+            },
+          ],
+        ]
+      : []),
+    [
+      "@docusaurus/plugin-pwa",
+      {
+        debug: false,
+        offlineModeActivationStrategies: ["appInstalled", "queryString"],
+        pwaHead: [
+          { tagName: "link", rel: "icon", href: "/img/logo.png" },
+          { tagName: "meta", name: "theme-color", content: "#ffffff" },
+        ],
+      },
+    ],
+    ["@docusaurus/plugin-ideal-image", {}],
+  ],
   themeConfig: {
     colorMode: {
       respectPrefersColorScheme: true,
@@ -63,8 +108,7 @@ const config: Config = {
         hideable: true,
       },
     },
-    // Replace with your project's social card
-    image: "img/social-card.jpg",
+    image: "img/social-card.png",
     navbar: {
       title: "",
       logo: {
@@ -94,14 +138,73 @@ const config: Config = {
       ],
     },
     footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Legal",
+          items: [
+            {
+              label: "Privacy Policy",
+              to: "/privacy",
+            },
+          ],
+        },
+      ],
       copyright: `Built with 💙 by <a target="_blank" href="https://devino.ca">Devino Solutions Inc</a>.`,
     },
     prism: {
       theme: prismThemes.oneLight,
       darkTheme: prismThemes.oneDark,
     },
+    metadata: [
+      // 🔍 General SEO
+      {
+        name: "title",
+        content: "Upup – The True Best React File Upload Component",
+      },
+      {
+        name: "description",
+        content:
+          "Upup is the true best modern, open-source React file uploader with drag & drop, instant previews, and seamless cloud storage integration including Google Drive, OneDrive, and S3.",
+      },
+      {
+        name: "keywords",
+        content:
+          "React file uploader, file upload component, Google Drive uploader, S3 upload, OneDrive integration, drag and drop uploader, cloud storage React component",
+      },
+      // 📘 Open Graph (for social sharing)
+      {
+        name: "og:title",
+        content: "Upup – The True Best React File Upload Component",
+      },
+      {
+        name: "og:description",
+        content:
+          "React file uploader with drag & drop, instant previews, and cloud storage integrations including Google Drive, OneDrive, and S3. Fully customizable and developer-friendly.",
+      },
+      {
+        name: "og:image",
+        content: "https://useupup.com/img/social-card.png",
+      },
+      { name: "og:url", content: "https://useupup.com/" },
+      { name: "og:type", content: "website" },
+      // 🐦 Twitter Card
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Upup – The True Best React File Upload Component",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Open-source React uploader with drag-and-drop, previews, and cloud storage integrations.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://useupup.com/img/social-card.png",
+      },
+    ],
   } satisfies Preset.ThemeConfig,
-
   customFields: {
     packageUrl: "https://github.com/DevinoSolutions/upup",
     driveConfigs: {
