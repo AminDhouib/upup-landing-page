@@ -56,7 +56,7 @@ const config: Config = {
           {
             tagName: "script",
             attributes: {
-              defer: true,
+              defer: "true",
             },
             innerHTML: `
               (function(h,o,t,j,a,r){
