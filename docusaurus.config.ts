@@ -210,12 +210,12 @@ const config: Config = {
     driveConfigs: {
       googleDrive: {
         google_client_id:
-          "831388449884-gac28dqof51il9tc7eitqjt1ql2vcjeb.apps.googleusercontent.com",
-        google_api_key: "AIzaSyCxm3S2g011GaJBqSxdbpJueTN8y213WYM",
-        google_app_id: "unotes-381911",
+          "716672485589-j2junjhv8ui7hmjhgb1sv3l2n0vs5lr5.apps.googleusercontent.com",
+        google_api_key: "AIzaSyACzUpBfc3l1khFfAdumBtoMKp8NAr7hhY",
+        google_app_id: "oauthappupup",
       },
       oneDrive: {
-        onedrive_client_id: "6a5dfe6b-7b41-4f43-a4f3-5c6e434056e1",
+        onedrive_client_id: "99ee7f72-91bf-44b9-925d-091c18b83269",
       },
     },
     tokenEndpoint: "",
