@@ -1,6 +1,8 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -209,16 +211,15 @@ const config: Config = {
     packageUrl: "https://github.com/DevinoSolutions/upup",
     driveConfigs: {
       googleDrive: {
-        google_client_id:
-          "716672485589-j2junjhv8ui7hmjhgb1sv3l2n0vs5lr5.apps.googleusercontent.com",
-        google_api_key: "AIzaSyACzUpBfc3l1khFfAdumBtoMKp8NAr7hhY",
-        google_app_id: "oauthappupup",
+        google_client_id: process.env.GOOGLE_CLIENT_ID,
+        google_api_key: process.env.GOOGLE_API_KEY,
+        google_app_id: process.env.GOOGLE_APP_ID,
       },
       oneDrive: {
-        onedrive_client_id: "99ee7f72-91bf-44b9-925d-091c18b83269",
+        onedrive_client_id: process.env.ONEDRIVE_CLIENT_ID,
       },
     },
-    tokenEndpoint: "",
+    tokenEndpoint: "http://localhost:5000/api/generate-presigned-url",
   },
   themes: ["@docusaurus/theme-mermaid"],
 };

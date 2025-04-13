@@ -36,7 +36,7 @@ export default function Uploader({ limit, mini }: Readonly<Props>) {
           <UpupUploader
             provider={UpupProvider.BackBlaze}
             limit={limit}
-            tokenEndpoint=""
+            tokenEndpoint={siteConfig.customFields.tokenEndpoint}
             uploadAdapters={uploadAdapters}
             driveConfigs={siteConfig.customFields.driveConfigs}
             dark={dark}
